@@ -1,0 +1,103 @@
+/* variables */
+:root {
+    --bg-color: #ebebeb;
+    --input-placeholder: #d4d4d4;
+    --input-bg: #efefef;
+    --texto-destaque: #ffff;
+    --azul-destaque: #2a7ae4;
+    --bg-contacto: #eaf2fd;
+    font-family: "Releway", sans-serif;
+  }
+
+/* reset */
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Releway", sans-serif;
+    background-color: var(--bg-color);
+    scroll-behavior: smooth;
+  }
+
+/* patron */
+  textarea:focus,input:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+input::placeholder,textarea::placeholder {
+  color: var(--input-placeholder);
+  padding: 2%;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* cabecera */
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    width: 1440px;
+    background-color: var(--texto-destaque);
+}    
+
+nav {    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0px;
+    gap: 611px;
+    width: 1136px;    
+}
+
+.cabecera-menu {
+    display: flex;    
+}
+
+.cabecera-derecha {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    width: 601px;
+    height: 50px;
+}
+
+.cabecera-logo{
+    width: 176px;
+    height: 50px;
+}
+
+.cabecera-input{    
+    padding: 8px 16px;
+    width: 330px;
+    height: 40px;
+    background-color: var(--input-bg);
+    background-image: url(../assets/Iconelupa.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 320px;
+    border: none;
+    border-radius: 20px;
+}
+
+.cabecera-login{
+    display: flex;    
+}
+
+.boton-blanco{
+    padding: 16px;    
+    width: 182px;
+    height: 51px;
+    border: 1px solid var(--azul-destaque);
+    background-color: transparent;
+    text-decoration: none;
+    color: var(--azul-destaque);    
+    font-family: "Releway", sans-serif;
+}

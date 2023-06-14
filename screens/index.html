@@ -3,21 +3,80 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" type="text/css" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet"/>
     <title>Alura Geek</title>
+    <link rel="shortcut icon" href="../assets/logocontrol.png">
 </head>
 <body>
-    <header class="cabecera">
-        <nav class="menu-cabecera">
-            <img class="logo-cabecera" src="../assets/Logogeek.png" alt="logo de alurageek">
-            <input class="input-cabecera" type="text" placeholder="¿Qué deseas buscar?">
-            <button class="boton-cabecera" >Login</button>
+    <header>
+        <nav>
+            <div class="cabecera-menu">
+                <div class="cabecera-derecha">
+                    <img class="cabecera-logo" src="../assets/Logogeek.png" alt="logo de alurageek">
+                    <input class="cabecera-input" type="text" placeholder="¿Qué deseas buscar?">
+                </div>
+                <div class="cabecera-login">
+                    <a href="login.html"><button class="boton-blanco" >Login</button></a>
+                </div>
+                
+            </div>
         </nav>
-        <div>
-            <img src="../assets/herobanner.png" alt="imagen de un super mushroom">
-            <h1>Febrero Promocional</h1>
-            <h3>Productos seleccionados con 33% de descuento</h3>
-            <button>Ver Consolas</button>
-        </div>
+        <section class="promociones">
+            <div class="banner">
+                <img class="fondo-banner" src="../assets/banner-image.png" alt="imagen de un super mushroom">
+                <h1>Febrero Promocional</h1>
+                <h4>Productos seleccionados con 33% de descuento</h4>
+                <button class="boton-azul">Ver Consolas</button>
+            </div>
+        </section>
     </header>
+    <section class="productos-general">
+        <div class="productos-titulo">
+            <div class="titulo">
+                <p>Productos</p>
+            </div>
+            <div class="mostrar-mas">
+                Ver todo<img src="" alt="">
+            </div>            
+        </div>
+        <section class="producto-card">
+            <div>
+                <img class="producto-img" src="../assets/tasa.png" alt="taza blanca">
+                <p class="producto-nombre">Taza Stormtrooper</p>
+                <p class="producto-pecio">$60.00</p>
+                <button class="producto-boton">Ver producto</button>
+            </div>
+        </section>
+    </section>
+    <section class="contacto">
+        <div class="contacto-logo">
+            <img src="../assets/Logogeek.png" alt="logo de alurageek">
+        </div>
+        <div class="contacto-links">
+            <p>Quines Somos</p>
+            <p>Política de privacidad</p>
+            <p>Programa de fidelidad</p>
+            <p>Nuestras Tiendas</p>
+            <p>Quiero ser franquiciado</p>
+            <p>Anúncie aqui</p>            
+        </div>
+        <form class="contacto-form">
+            <p>Hable con nosotros</p>
+            <div class="label-float">
+                <input class="input-nombre" type="text" name="Nombre" id="Nombre" placeholder="">
+            </div>
+            <div class="contacto-textarea">
+                <textarea name="mensaje" id="msg" cols="5" rows="5" placeholder="Escribe tu mensaje"></textarea>
+            </div>
+            <button class="boton-azul">Enviar mensaje</button>
+        </form>
+    </section>
+    <footer>
+        <p>Desarrollado por Pablo Salazar</p>
+        <p>2023</p>
+    </footer>
 </body>
 </html>
